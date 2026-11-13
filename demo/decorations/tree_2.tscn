@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj50vmqafvhr1"]
+
+[ext_resource type="PackedScene" uid="uid://cyj6qtr0twhwu" path="res://demo/decorations/tree_1.tscn" id="1_myn6t"]
+
+[node name="Tree" instance=ExtResource("1_myn6t")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(16, 352, 32, 48)

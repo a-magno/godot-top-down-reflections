@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cig082mq7kpqx"]
+
+[ext_resource type="PackedScene" uid="uid://cyj6qtr0twhwu" path="res://demo/decorations/tree_1.tscn" id="1_heyi2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_heyi2"]
+size = Vector2(16, 16)
+
+[node name="Tree" instance=ExtResource("1_heyi2")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(-8, -24)
+region_rect = Rect2(0, 352, 16, 32)
+
+[node name="ReflectableComponent" parent="Sprite2D" index="0"]
+position = Vector2(8, 24)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 0)
+shape = SubResource("RectangleShape2D_heyi2")

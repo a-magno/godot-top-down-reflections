@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyj6qtr0twhwu"]
+
+[ext_resource type="Texture2D" uid="uid://d2vvcf1ughqby" path="res://demo/assets/MPWSP01/tileset/tileset.png" id="1_i4d6j"]
+[ext_resource type="Script" uid="uid://di1xvamhnjwgi" path="res://addons/top_down_reflections/reflectable.gd" id="2_ea4e5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4d6j"]
+size = Vector2(32, 16)
+
+[node name="Tree" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 0)
+shape = SubResource("RectangleShape2D_i4d6j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -40)
+texture = ExtResource("1_i4d6j")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 304, 32, 48)
+
+[node name="ReflectableComponent" type="Node2D" parent="Sprite2D" node_paths=PackedStringArray("target_sprite")]
+position = Vector2(16, 48)
+script = ExtResource("2_ea4e5")
+target_sprite = NodePath("..")

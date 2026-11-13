@@ -1,0 +1,6 @@
+MPWSP01 pixel art pack by Scarloxy
+https://scarloxy.itch.io/mpwsp01
+
+This art is not part of the MIT-licensed code in this repository and is not
+covered by its LICENSE file. It is included only to run the demo scene. All
+rights belong to the author; see the page above for the terms of use.

@@ -1,0 +1,8 @@
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
+
+# Asset Library downloads (git archive) contain only the add-on folder (with its
+# own LICENSE). The demo, its art, docs and project files stay in the repo.
+/** export-ignore
+/addons/** -export-ignore
+/addons -export-ignore
