@@ -47,7 +47,7 @@ of raising their `z_index`.
 ## Demo
 
 Clone this repository and press F5 to run `demo/demo.tscn`. Move with the
-arrow keys. The demo is not part of the Asset Library download.
+arrow keys.
 
 ## Limits
 
